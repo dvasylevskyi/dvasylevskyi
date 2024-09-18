@@ -14,7 +14,11 @@ def register():
   forename = st.text_input("enter your forename").lower()
   birthday = st.text_input("enter your birthday like this (DD/MM/YY)")
   password = st.text_input("enter your password")
-  username = surname[0] + surname[1] + forename[1] + birthday[2] 
+  username = forename[0] + surname[1] + surname[2] + birthday 
+  print("your user name is" + password)
+  print("your password is" + password)
+  file=open("userlist.txt","a")
+  file.write("\n" + username + "," + forename + "," + birthday + "," + surname 
   
     
     
