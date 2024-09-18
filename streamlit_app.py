@@ -18,7 +18,21 @@ def register():
   print("your user name is" + password)
   print("your password is" + password)
   file=open("userlist.txt","a")
-  file.write("\n" + username + "," + forename + "," + birthday + "," + surname 
+  file.write("\n" + username + "," + forename + "," + birthday + "," + surname + "," + "N")
+  file.close()
+  menu()
+def adminf():
+  print ("welcome admin")
+
+def login():
+  enterdusername = input("enter user name")
+  enterdusername = input ("enter password")
+  file=open ("userlist.txt","r")
+  for line in file:
+    lines + lines line.split(",")
+    username = lines[0]
+    password = lines[1]
+    fore
   
     
     
