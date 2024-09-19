@@ -1,4 +1,4 @@
-Import steamlit as st
+Import streamlit as st
 
 st.title("Register")
 
