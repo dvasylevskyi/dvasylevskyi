@@ -24,7 +24,8 @@ def adminf():
 def login():
   enterdusername = st.text_input("enter user name")
   enterdusername = st.text_input ("enter password")
-  file=open ("userlist.txt","r")
+  if st.butten("check user")
+  file=open ("userlist.csv","r" , encording="utf-8-sing")
   for line in file:
     lines = line.split(",")
     username = lines[0]
