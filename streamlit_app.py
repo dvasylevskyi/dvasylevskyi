@@ -25,7 +25,7 @@ def login():
   enterdusername = st.text_input("enter user name")
   enterdusername = st.text_input ("enter password")
   if st.butten("check user"):
-  file=open ("userlist.csv","r" , encording="utf-8-sing")
+    file=open("userlist.csv", "r" , encording="utf-8-sing")
   for line in file:
     lines = line.split(",")
     username = lines[0]
