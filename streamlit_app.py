@@ -30,7 +30,7 @@ def login():
   enterdusername = st.text_input ("enter password")
   file=open ("userlist.txt","r")
   for line in file:
-    lines = lines line.split(",")
+    lines = line.split(",")
     username = lines[0]
     password = lines[1]
     forename = lines[2]
