@@ -7,7 +7,7 @@ def menu():
   if select == "1":
       login()
   elif select == "r":
-    register()
+      register()
   else:
     menu()
 def register():
