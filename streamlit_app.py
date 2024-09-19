@@ -8,15 +8,16 @@ def menu():
 def register():
   surmane = st.text_input("enter your surname").lower()
   forename = st.text_input("enter your forename").lower()
-  birthday = st.text_input("enter your birthday like this (DD/MM/YY)")
+  birthday = st.text_input("enter your birthday like this 24031988 for somepne born on 24 March 1988")
   password = st.text_input("enter your password")
   username = forename[0] + surname[1] + surname[2] + birthday 
-  print("your user name is" + password)
+  print("your user name is" + username)
   print("your password is" + password)
   file=open("userlist.txt","a")
-  file.write("\n" + username + "," + forename + "," + birthday + "," + surname + "," + "N")
+  file.write("\n" + username + "," + password + "," + forename + "," + birthday + "," + surname + "," + "N")
   file.close()
   menu()
+  
 def adminf():
   st.write ("welcome admin")
 
@@ -34,8 +35,8 @@ def login():
     admin = lines[5]
 
     if enterdusername == username and enterdpassword == password:
-      if admin == "N":
-         print("welcome " + forename + " " + surname + " your birthday is " + birthday)
+       if admin == "N":
+         print( "welcome " + forename + " " + surname + " your birthday is " + birthday)
       else:
         adminf()
 
