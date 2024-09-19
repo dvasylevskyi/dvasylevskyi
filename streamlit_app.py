@@ -36,9 +36,9 @@ def login():
 
     if enterdusername == username and enterdpassword == password:
        if admin == "N":
-         print( "welcome " + forename + " " + surname + " your birthday is " + birthday)
+          print( "welcome " + forename + " " + surname + " your birthday is " + birthday)
        else:
-        adminf() 
+          adminf() 
 else:
   menu()
 
