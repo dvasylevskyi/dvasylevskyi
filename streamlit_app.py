@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Register")
+st.title("Register or Log in")
 
 def menu():
   select =st.text_input("enter L to log in or R to register").lower()
