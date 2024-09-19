@@ -4,12 +4,7 @@ st.title("Register or Log in")
 
 def menu():
   select = st.text_input("enter l to log in or r to register").lower()
-  if select == "l":
-      login()
-  elif select == "r":
-      register()
-  else:
-    menu()
+  
 def register():
   surmane = st.text_input("enter your surname").lower()
   forename = st.text_input("enter your forename").lower()
