@@ -39,7 +39,7 @@ def login():
          print( "welcome " + forename + " " + surname + " your birthday is " + birthday)
        else:
         adminf() 
-else:
+ else:
    menu()
 
  
